@@ -34,13 +34,13 @@ function InputBox({
             <div className="w-1/2 flex flex-wrap justify-end text-right">
                 <p className="text-black/40 mb-2 w-full">Currency Type</p>
                 <select
-                    className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none  text-center font-bold uppercase"
+                    className="rounded-lg px-2 py-1  bg-orange-200 cursor-pointer outline-none  text-center font-bold uppercase"
                     value={selectCurrency}
                     onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
                     disabled={currencyDisable}
                     >
                     
-                    {currencyOptions.map((currency) => (<option value={currency} key={currency}>
+                    {currencyOptions.map((currency) => (<option className='bg-orange-100 ' value={currency} key={currency}>
                         {currency}
                     </option>))}
                     
